@@ -1,0 +1,21 @@
+@import "variables.less";
+body{
+  background-color: @brand-color;
+}
+//mobile first
+.container{
+  width:@container-width;
+  margin:auto;
+}
+.col-md-12,.col-md-11,.col-md-10,.col-md-9,.col-md-8,.col-md-7,.col-md-6,.col-md-5,.col-md-4,.col-md-3,.col-md-2,.col-md-1{
+  width:@mobile-width;
+}
+.col-md-6{
+  @media only screen and (min-width : @mobile-breakpoint){
+    width:50%;
+    float:left;
+  }
+}
+h1{
+  color:red;
+}
